@@ -5,6 +5,14 @@
     verArray($_GET);
     verArray($_POST);
     
+    
+    if (isset ($_GET['opcion']) && $_GET['opcion']=='insertar')
+    {
+        include 'form_insertar.php';
+        exit();
+    }
+    
+    
     if (isset ($_GET['opcion']) && $_GET['opcion']=='buscar')
     {
         include 'form_buscar.php';
