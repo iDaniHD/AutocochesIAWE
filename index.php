@@ -14,10 +14,15 @@
     
     if ( isset($_POST['insertar']))
     {
+        $errores = array();
+        $marca = trim($_POST['make']);
+        $modelo = trim($_POST['modelo']);
         
-        
-        
-        
+        if (!empty($errores))
+        {
+            include "form_insertar.php"; 
+            exit();
+        } 
         
         
         include "form_insertar.php"; 
