@@ -12,9 +12,15 @@
         exit();
     }
     
-    if ( isset($_POST['buscar']))
+    if ( isset($_POST['insertar']))
     {
         
+        
+        
+        
+        
+        
+        include "form_insertar.php"; 
     }
     
     if (isset ($_GET['opcion']) && $_GET['opcion']=='buscar')
