@@ -64,6 +64,7 @@
     
 if (empty($buscar))
 {
+    if (isset ($marca))
     echo "No existe ningún modelo fabricado por $marca en $annio en nuestra base de datos";
 }
 else
