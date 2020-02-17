@@ -1,0 +1,224 @@
+
+root { 
+    display: block;
+}
+body {
+    height: 100%;
+    background-image: url(../images/bgblack.jpg);
+    /* background-color: black;  */
+    background-position: 50% 0;
+    color: red;
+    line-height: 1.5;
+    font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
+    font-size: 80%;
+    text-align: center;
+
+
+}
+#contenido {
+    width: 960px;
+    background: beige;
+
+    margin: 20px auto;
+    padding: 20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid orangered;
+    min-height: 600px;
+
+}
+
+#principal {    
+    padding: 15px;
+    min-height: 400px;
+
+
+}
+
+#cabecera {
+    height: 90px;
+    margin: 0 auto; 
+    background-image: url(../images/bgcolores01.jpg);
+    border: 2px solid  darkslateblue;
+
+}
+#menu {
+    background-color: orangered;  
+    border: 1px solid wheat;
+    width: 100%;
+    height: 3em;
+    color: white;
+    font-family: "Rockwell";
+    font-size: 16px;
+
+}
+#primero {
+    margin-left: 9em;
+}
+
+
+#menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: green;
+}
+#menu ul {     
+    list-style-type: none;
+    text-align: left;
+}
+
+#menu ul li {
+    display: inline;
+    border-right: 1px solid wheat;
+    padding-right: 2em;
+    padding-left: 2em;
+
+}
+#cabecera h1{
+    text-align: center;
+    color: black;
+    font-family: "Rockwell";
+    letter-spacing: 3px;
+
+
+}
+#principal .pelicula {
+    border: 1px dotted red;
+    text-align: left;
+    width: 60%;
+    margin: 5px;
+    padding-left: 10px;
+
+}
+
+#principal .actor {
+    border: 1px dotted red;
+    text-align: left;
+    width: 60%;
+    margin: 5px;
+    padding-left: 10px;
+    background-color: lightgray;
+    color: darkslategray;
+
+}
+
+#principal h1, h2 {
+
+    text-align: left;
+
+
+}
+.pelicula a {
+    text-decoration: none;
+}
+
+#pie {
+
+    margin: 0 auto;
+    color: orangered;
+    border-top:  3px solid orangered;
+
+}
+#pie p {
+    text-align: center;
+    font-size: smaller;
+
+}
+
+
+
+h1, h2, h3, h4 {
+    color: darkslategray;
+}
+
+table {
+    border: 1px solid forestgreen;
+    border-collapse: collapse;
+    margin-left: 180px;
+    width: 60%;
+}
+th {
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid forestgreen;
+    padding: .4em .5em .4em .5em;
+    vertical-align: top;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #C4F1FF;
+ 
+}
+th {
+    font-weight: bold;
+    background-color: #a2c9e1;
+   
+}
+
+#form {
+    margin-top: 2em;
+    margin-left: 2em;
+    width: 80%;
+}
+
+label {
+    width: 10em;
+    padding-right: 1em;
+    float: left;
+}
+label.radio{
+    width: 2em;
+     
+}
+#form input {
+    float: left;
+    margin-bottom: .6em;
+}
+#form input[type='text'] {
+    width: 12em;
+}
+
+#form input[type='submit'] {
+
+    width: 10em;
+    margin-top: 2em;
+}
+
+#form input[type='radio'] {
+    width: 1em;
+    margin-left: 0.25em;
+    float:left;
+}
+#form input[type='checkbox'] {
+    width: 2em;
+    margin-left: 2em;
+    float:left;
+}
+#form  select {
+    float: left;
+    width: 10em;
+    margin-bottom: 1em;
+
+}
+
+br {
+    clear: left;
+}
+.resultado {
+    margin-top: 5em;
+    padding: 1px;
+    color: darkslateblue;
+    margin-left: 10em;
+}
+.error {
+    padding-left:  5px;
+    color:  green;
+    font-size: small;
+}
