@@ -12,6 +12,10 @@
         exit();
     }
     
+    if ( isset($_POST['buscar']))
+    {
+        
+    }
     
     if (isset ($_GET['opcion']) && $_GET['opcion']=='buscar')
     {
