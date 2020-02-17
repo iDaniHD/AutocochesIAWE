@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>Ejercicios UT4 BD y PHP</title>
+        <title>AUTOCOCHES</title>
         <link rel="stylesheet" type="text/css" href="css/estilo.css" />
     </head>
 
@@ -13,7 +13,7 @@
         <div id="contenido">
        
         <div id="cabecera">
-            <h1> Base de datos Pel&iacute;culas </h1>
+            <h1> Base de datos de modelos de automóviles </h1>
             
         </div> <!-- fin de cabecera -->
         <div id="principal">
