@@ -2,12 +2,12 @@
     include "cabecera.php";
 ?>
     
-    <form id='form' action="index.php" method="post">
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Submit">
+ <form id='form' action="index.php" method="post">
+  <label for="make">Marca : </label>
+  <input type="text" id="make" name="make"><br><br>
+  <label for="model">Model:</label>
+  <input type="text" id="model" name="model"><br><br>
+  <input type="submit" name="insertar" value="Insertar">
 </form>
     
     
