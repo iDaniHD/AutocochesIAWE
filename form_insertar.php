@@ -4,9 +4,11 @@
     
  <form id='form' action="index.php" method="post">
   <label for="make">Marca : </label>
-  <input type="text" id="make" name="make"><br><br>
+ <?php if (isset ($errores['marca'])) echo "<p>Introduzca marca</p>"; ?>
+  <input type="text" id="make" name="make" value="<?php if (isset ($marca)) echo $marca ?>"><br><br>
   <label for="model">Modelo : </label>
-  <input type="text" id="model" name="model"><br><br>
+ <?php if (isset ($errores['modelo'])) echo "<p>Introduzca modelo</p>"; ?>
+  <input type="text" id="model" name="model" value="<?php if (isset ($modelo)) echo $modelo ?>"><br><br>
   <input type="submit" name="insertar" value="Insertar">
 </form>
     

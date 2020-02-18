@@ -16,7 +16,15 @@
     {
         $errores = array();
         $marca = trim($_POST['make']);
-        $modelo = trim($_POST['modelo']);
+            if (empty($marca))
+            {
+                $errores['marca'] = 'Introduca la marca del fabricante';
+            }
+        $modelo = trim($_POST['model']);
+            if (empty ($modelo))
+            {
+                $errores['modelo'] = 'Introduzca modelo';
+            }
         
         if (!empty($errores))
         {
@@ -26,6 +34,8 @@
         
         
         include "form_insertar.php"; 
+        
+        exit();
     }
     
     if (isset ($_GET['opcion']) && $_GET['opcion']=='buscar')
