@@ -10,9 +10,28 @@
  <?php if (isset ($errores['modelo'])) echo "<p>Introduzca modelo</p>"; ?>
   <input type="text" id="model" name="model" value="<?php if (isset ($modelo)) echo $modelo ?>"><br><br>
   <input type="submit" name="insertar" value="Insertar">
+  <select name="annio">
+        <?php 
+
+            $i = 1950;        
+           while ($i < 2013)
+           {
+               echo "<option value = $i ";
+               if (isset ($_POST['annio']) && $_POST['annio'] == "$i")
+               {
+                   echo "selected = selected";
+               }
+               echo ">$i</option>";
+               $i++;
+           } 
+
+        ?>
+    
+    </select><br />
 </form>
     
     
+
 <?php
     include "pie.php";
 ?>

@@ -25,12 +25,50 @@
             {
                 $errores['modelo'] = 'Introduzca modelo';
             }
-        
+        $annio = trim($_POST['annio']);
         if (!empty($errores))
         {
             include "form_insertar.php"; 
             exit();
         } 
+        
+        echo "insertamos";
+        echo $marca;
+        echo $modelo;
+        echo $annio;
+        
+        $marca = mysqli_real_escape_string($conexion, $marca);
+        $modelo = mysqli_real_escape_string($conexion, $modelo);
+        
+        
+        // consulta de inserci�n en la BD
+        $sql = "INSERT INTO make (id, code, title)
+                VALUES (null, '$marca' , '$marca') ";
+        //echo $sql;
+        
+        $resul = mysqli_query($conexion, $sql);
+        if (!$resul) // ha ocurrido un error
+        {
+            $error = "Error en consulta de inserción - ".mysqli_error($conexion);
+            include "error.php";
+            exit();
+        }
+        
+        
+        $sql = "INSERT INTO model (id, make_id, code, title, year)
+                VALUES (null, null, '$modelo' , '$modelo', '$annio') ";
+        
+         $resul = mysqli_query($conexion, $sql);
+        if (!$resul) // ha ocurrido un error
+        {
+            $error = "Error en consulta de inserción - ".mysqli_error($conexion);
+            include "error.php";
+            exit();
+        }
+        
+        
+        header('Location: index.php?oper=insertar');
+        
         
         
         include "form_insertar.php"; 
