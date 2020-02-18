@@ -25,9 +25,15 @@
                $i++;
            } 
 
-        ?>
-    
+        ?>    
     </select><br />
+    
+    <?php
+    if ($insercion == 1)
+    {
+        echo "Inserción realizada correctamente";
+    }
+?>
 </form>
     
     

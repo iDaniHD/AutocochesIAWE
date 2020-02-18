@@ -67,9 +67,9 @@
         }
         
         
-        header('Location: index.php?oper=insertar');
+        #header('Location: index.php?oper=insertar');
         
-        
+        $insercion = 1;
         
         include "form_insertar.php"; 
         
