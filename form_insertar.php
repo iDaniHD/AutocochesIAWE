@@ -29,7 +29,7 @@
     </select><br />
     
     <?php
-    if ($insercion == 1)
+    if (isset ($insercion) && $insercion == 1)
     {
         echo "Inserción realizada correctamente";
     }

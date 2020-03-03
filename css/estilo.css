@@ -1,64 +1,48 @@
+
+
 root { 
     display: block;
 }
 body {
-    height: auto;
-    width: auto;
+    height: 100%;
     //background-image: url(../images/fondo.jpg);
-     background-color: white;  
-    background-position: 50% 50%;
+    background-color: white;  
+    background-position: 50% 0;
     color: red;
     line-height: 1.5;
-     font-family: "Homer Simpson UI";
+    font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
     font-size: 80%;
     text-align: center;
 
 
 }
 #contenido {
-    
-    width: auto;
-    
-    background: white;
-    //background-image: url(../images/descarga.jpg);
-    margin: 0px auto;
+    width: 960px;
+    //background: gray;
+    background-image: url(../images/web.jpg);
+    margin: 20px auto;
     padding: 20px;
-   // -moz-border-radius: 5px;
-    //-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
     border-radius: 5px;
-    border: 1px solid blue;
+    border: 1px solid orangered;
     min-height: 600px;
-
-
 
 }
 
 #principal {    
     padding: 15px;
-    min-height: 700px;
-   // opacity: 3.9;
-//background-color:blue;
-background-image: url(../images/web.jpg);
-background-repeat: no-repeat;
-background-origin: padding-box;
-margin: 10 auto;
-
-
+    min-height: 400px;
 
 
 }
 
 #cabecera {
-
-   height: 100%;
-    margin: 80 auto; 
-    //background-image: url(../images/descarga.jpg);
-  
+    height: 90px;
+    margin: 0 auto; 
+    //background-image: url(../images/cabecera.jpg);
     border: 2px solid  darkslateblue;
-     width: auto;
-    background: black;
-     font-family: "Homer Simpson UI";
-
+      background-color: black; 
 
 }
 #menu {
@@ -67,8 +51,7 @@ margin: 10 auto;
     width: 100%;
     height: 3em;
     color: white;
-   //font-family: "Monaco";
-   font-family: "Homer Simpson UI";
+    font-family: "Monaco";
     font-size: 16px;
 
 }
@@ -100,10 +83,7 @@ margin: 10 auto;
 #cabecera h1{
     text-align: center;
     color: white;
-    //font-family: Rockwell;
-    //font: oblique bold 120% cursive;
-     font-family: "Homer Simpson UI";
-    //font-family: Arial;
+    font-family: "Rockwell";
     letter-spacing: 3px;
 
 
@@ -141,8 +121,8 @@ margin: 10 auto;
 #pie {
 
     margin: 0 auto;
-    color: black;
-    border-top:  3px solid black;
+    color: orangered;
+    border-top:  3px solid orangered;
 
 }
 #pie p {
@@ -154,7 +134,7 @@ margin: 10 auto;
 
 
 h1, h2, h3, h4 {
-    color: white;
+    color: darkslategray;
 }
 
 table {
@@ -194,14 +174,10 @@ label {
     width: 10em;
     padding-right: 1em;
     float: left;
-    color: white;
-    font-weight: bold;
 }
 label.radio{
-    //width: 2em;
-      width: 1em;
-    padding-right: 1em;
-    float: left;
+    width: 2em;
+     
 }
 #form input {
     float: left;

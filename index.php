@@ -2,8 +2,8 @@
     require_once 'utils.php';
     require_once 'conexion.php';
     require_once 'modelo.php';
-    verArray($_GET);
-    verArray($_POST);
+    #verArray($_GET);
+    #verArray($_POST);
     
     
     if (isset ($_GET['opcion']) && $_GET['opcion']=='insertar')
