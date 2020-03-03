@@ -1,4 +1,10 @@
 <?php
+
+
+
+    # https://codewithawa.com/posts/complete-user-registration-system-using-php-and-mysql-database 
+
+
     require_once 'utils.php';
     require_once 'conexion.php';
     require_once 'modelo.php';
