@@ -122,7 +122,7 @@
         $sql = "SELECT m.title, l.title, l.year FROM make m join model l on m.id = l.make_id where m.title = '$marca' and l.year = $annio";
         
         $buscar = obtenerResultados($conexion, $sql);
-        verArray($buscar);
+        #verArray($buscar);
         
         include "form_buscar.php";     
         
