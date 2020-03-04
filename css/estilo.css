@@ -5,10 +5,9 @@ root {
 }
 body {
     height: 100%;
-    //background-image: url(../images/fondo.jpg);
     background-color: white;  
     background-position: 50% 0;
-    color: red;
+    color: white;
     line-height: 1.5;
     font-family: "Century Gothic", "Gill Sans", Arial, sans-serif;
     font-size: 80%;
@@ -18,7 +17,6 @@ body {
 }
 #contenido {
     width: 960px;
-    //background: gray;
     background-image: url(../images/web.jpg);
     margin: 20px auto;
     padding: 20px;
@@ -40,7 +38,6 @@ body {
 #cabecera {
     height: 90px;
     margin: 0 auto; 
-    //background-image: url(../images/cabecera.jpg);
     border: 2px solid  darkslateblue;
       background-color: black; 
 
@@ -89,7 +86,7 @@ body {
 
 }
 #principal .pelicula {
-    border: 1px dotted red;
+     /* border: 1px dotted white; */
     text-align: left;
     width: 60%;
     margin: 5px;
@@ -121,8 +118,8 @@ body {
 #pie {
 
     margin: 0 auto;
-    color: orangered;
-    border-top:  3px solid orangered;
+    color: white;
+    border-top:  3px white;
 
 }
 #pie p {
@@ -134,7 +131,7 @@ body {
 
 
 h1, h2, h3, h4 {
-    color: darkslategray;
+    color: white;
 }
 
 table {
