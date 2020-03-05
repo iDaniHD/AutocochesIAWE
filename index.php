@@ -8,8 +8,23 @@
     require_once 'utils.php';
     require_once 'conexion.php';
     require_once 'modelo.php';
+    
+    
+  
+  session_start(); 
+
+  if (!isset($_SESSION['username'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: login.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['username']);
+  	header("location: login.php");
+  }
+
     #verArray($_GET);
-    #verArray($_POST);
+    verArray($_POST);
     
     
     if (isset ($_GET['opcion']) && $_GET['opcion']=='insertar')

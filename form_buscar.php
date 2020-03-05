@@ -6,7 +6,7 @@
 <form id='form' action="index.php" method="post">
     <div id='datos'>
         <h3>Formulario de búsqueda</h3>
-         <h4>Películas estrenadas en el año elegido y que contienen en el título la letra seleccionada</h4>
+         <h4>Modelos de fabricantes por año</h4>
     <label> </label>
     <select name="marca">
         <?php 
