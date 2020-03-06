@@ -48,11 +48,14 @@
         exit();
     }
     
-    /* if (isset ($_GET['oper']) && $_GET['oper'] == 'insertar')
+     if (isset ($_GET['oper']) && $_GET['oper'] == 'insertar')
     {
-        $mensaje = "";
+        $insercion = 1;
+        
+        include "form_insertar.php";
+        exit();
     }
-    */
+    
     if ( isset($_POST['insertar']))
     {
         $errores = array();
@@ -108,7 +111,7 @@
         }
         
         
-        #header('Location: index.php?oper=insertar');
+        header('Location: index.php?oper=insertar');
         
         $insercion = 1;
         
