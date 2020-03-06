@@ -9,22 +9,37 @@
     require_once 'conexion.php';
     require_once 'modelo.php';
     
-    
+    $permitirInsertar = 0;
   
-  session_start(); 
+ # session_start(); 
 
-  if (!isset($_SESSION['username'])) {
+ /* if (!isset($_SESSION['username'])) {
   	$_SESSION['msg'] = "You must log in first";
   	header('location: login.php');
   }
+  * */
+  
   if (isset($_GET['logout'])) {
   	session_destroy();
   	unset($_SESSION['username']);
-  	header("location: login.php");
+  	header("location: index.php");
   }
 
     #verArray($_GET);
-    verArray($_POST);
+    #verArray($_POST);
+  
+  if (isset ($_GET['opcion']) && $_GET['opcion']=='insertarProhibido')
+    {
+        include 'insertar_prohibido.php';
+        exit();
+    }
+  
+  
+  if (isset ($_GET['opcion']) && $_GET['opcion']=='login')
+  {
+      include 'login.php';
+      exit();
+  }
     
     
     if (isset ($_GET['opcion']) && $_GET['opcion']=='insertar')
@@ -33,6 +48,11 @@
         exit();
     }
     
+    /* if (isset ($_GET['oper']) && $_GET['oper'] == 'insertar')
+    {
+        $mensaje = "";
+    }
+    */
     if ( isset($_POST['insertar']))
     {
         $errores = array();

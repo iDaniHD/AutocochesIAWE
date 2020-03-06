@@ -11,7 +11,8 @@ $errors = array();
 
 // connect to the database
 $db = mysqli_connect('localhost', 'pepe', 'pepa', 'registro');
-verArray($_POST);
+#verArray($_POST);
+#verArray($_SESSION);
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
   // receive all input values from the form
@@ -78,7 +79,8 @@ if (isset($_POST['login_user'])) {
   	if (mysqli_num_rows($results) == 1) {
   	  $_SESSION['username'] = $username;
   	  $_SESSION['success'] = "You are now logged in";
-  	  header('location: index.php');
+          $permitirInsertar = 1;
+  	  header('location: form_insertar.php');
   	}else {
   		array_push($errors, "Wrong username/password combination");
   	}
